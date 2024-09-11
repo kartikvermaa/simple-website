@@ -3,18 +3,19 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # Adjust this if you want to deploy from a different branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3  # Updated to latest version
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Directory to deploy; change if needed
+          publish_branch: gh-pages  # Branch to deploy to; change if needed
