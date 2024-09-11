@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Run on Push to Main
 
 on:
   push:
@@ -6,16 +6,14 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Directory to deploy; change if needed
-          publish_branch: gh-pages  # Branch to deploy to; change if needed
+      - name: Run a script or build process
+        run: |
+          echo "This is where you can run your build or test scripts."
+          # Add your custom commands here
