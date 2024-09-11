@@ -5,48 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kartik's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <img src="your-photo.jpg" alt="Kartik's Photo" class="profile-pic">
-            <h1>Kartik</h1>
-            <p>DevOps Intern at Codenscious.ai | CSE Student | Passionate about Automation</p>
+            <h1>KARTIK</h1>
+            <p class="tagline">DevOps Intern | Cloud Enthusiast | AWS </p>
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I'm Kartik, a DevOps intern at Codenscious.ai. I specialize in CI/CD pipelines, Docker, and cloud deployment. I'm currently pursuing my CSE degree and have worked on several projects that highlight my skills in both development and automation.</p>
+            <p>Hello! I'm Kartik, a DevOps intern at Codenscious.ai, passionate about cloud computing, automation, and CI/CD pipelines. I'm currently pursuing my CSE degree, and I enjoy working on projects that bridge the gap between development and operations.</p>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section bg-dark">
         <div class="container">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>CI/CD Pipeline for Node.js Application</strong> - Implemented a CI/CD pipeline using EC2, Docker, and PM2.</li>
-                <li><strong>Expense Tracker Application</strong> - A web-based Java project with secure authentication using Servlets, JSP, and Hibernate.</li>
-                <li><strong>Notepad Clone</strong> - Developed a Java-based Notepad with essential features like file management and text formatting.</li>
-            </ul>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>CI/CD Pipeline for Node.js Application</h3>
+                    <p>Implemented a robust CI/CD pipeline using EC2, Docker, and PM2 to automate deployment.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Expense Tracker Application</h3>
+                    <p>Developed a web-based Java application with secure authentication using Servlets, JSP, and Hibernate.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Notepad Clone</h3>
+                    <p>Created a Notepad application in Java with essential features like text formatting and file management.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact Me</h2>
             <p>Let's connect on:</p>
             <ul class="social-links">
                 <li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
                 <li><a href="https://github.com/your-github" target="_blank">GitHub</a></li>
-                <li><a href="mailto:your-email@example.com">Email</a></li>
+                <li><a href="mailto:kartikverma880@gmail.com">Email</a></li>
             </ul>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Kartik | All Rights Reserved</p>
+        <div class="container">
+            <p>&copy; 2024 Kartik | All Rights Reserved</p>
+        </div>
     </footer>
 </body>
 </html>
